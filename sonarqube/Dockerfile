@@ -1,2 +1,2 @@
-FROM sonarqube:7.9-community
+FROM sonarqube:7.5-community
 MAINTAINER <13966837@qq.com>
