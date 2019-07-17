@@ -23,20 +23,5 @@ RUN wget http://cdn.npm.taobao.org/dist/node/v8.9.0/node-v8.9.0-linux-x64.tar.gz
     ln -s /home/yapi/node-v8.9.0-linux-x64/bin/node /usr/local/bin/node && \
     ln -s /home/yapi/node-v8.9.0-linux-x64/bin/npm /usr/local/bin/npm
 
-RUN mkdir -p /home/yapi/log
-
-RUN chown -R yapi:yapi /home/yapi/log
-
-VOLUME ["/home/yapi/log"]
-
-# download yapi source code
-USER yapi
-
-RUN mkdir yapi && \
-    wget https://github.com/YMFE/yapi/archive/v1.7.2.tar.gz && \
-    tar -xzvf v1.7.2.tar.gz -C yapi --strip-components 1
-
-# npm install dependencies and run build
-WORKDIR /home/yapi/yapi
-
-RUN npm install
+RUN npm install -g yapi-cli --registry https://registry.npm.taobao.org && \
+    yapi server
