@@ -1,2 +1,2 @@
-FROM nacos/nacos-server:1.1.0
+FROM nacos/nacos-server:latest
 MAINTAINER <13966837@qq.com>
