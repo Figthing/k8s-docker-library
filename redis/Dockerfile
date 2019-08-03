@@ -1,0 +1,2 @@
+FROM redis:5
+MAINTAINER <13966837@qq.com>
