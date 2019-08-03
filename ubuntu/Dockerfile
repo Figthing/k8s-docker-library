@@ -1,0 +1,2 @@
+FROM ubuntu:18.10
+MAINTAINER <13966837@qq.com>
