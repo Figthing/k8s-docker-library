@@ -1,2 +1,2 @@
-FROM docker.elastic.co/elasticsearch/elasticsearch-oss:6.4.3
+FROM quay.io/fluentd_elasticsearch/elasticsearch:v7.3.2
 MAINTAINER <13966837@qq.com>
