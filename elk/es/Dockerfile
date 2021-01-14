@@ -1,2 +1,0 @@
-FROM elasticsearch:7.6.1
-MAINTAINER <13966837@qq.com>
